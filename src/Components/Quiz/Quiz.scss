@@ -1,0 +1,89 @@
+@import "../../Styles/vars.scss";
+
+.quiz-container{
+    width: 550px;
+    background: $bg-accent;
+    border-radius: 4px;
+    margin-top: 150px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0px 0px 5px 2px rgb(79, 77, 77);
+
+
+    .active-question-no{
+        font-size: 32px;
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .total-question{
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+    
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    ul{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+        li{
+            text-decoration: none;
+            list-style: none;
+            color: $foreground;
+            font-size: 16px;
+            background: $bg;
+            border: 1px solid $disabled;
+            border-radius: 16px;
+            padding: 11px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .selected-answer{
+            background:#9c9c9c;
+            border: 1px solid #2d264b;
+            color: $bg;
+        }
+        
+    }
+
+  .footer{
+    display: flex;
+    justify-content: flex-end;
+  }  
+  
+  button{
+    background: #1332f7;
+    border-radius: 9px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:disabled{
+        background: #9c9c9c;
+        color: #ffffff;
+        cursor: not-allowed;
+    }
+  }
+
+ 
+}
+input{
+    border: 1px solid $disabled;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
